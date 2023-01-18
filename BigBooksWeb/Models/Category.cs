@@ -1,12 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BigBooksWeb.Models
 {
     public class Category
     {
-        [Key , Required]
+        [Key] 
         public int ID { get; set; }
-        public string Name { get; set; }    
+        [Required, StringLength(10)]
+        public string Name { get; set; }
+        [DisplayName("Project Name")]
         public string DisplayOrder { get; set; }
         public DateTime? CreatedDate { get; set; } = DateTime.Now;
     }
