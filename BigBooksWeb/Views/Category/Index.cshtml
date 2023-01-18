@@ -27,19 +27,25 @@
             </th>
            <th>
                <div class="text-md-center">
-                 Category Name
+                 Name
                 </div>
            </th>
             <th>
                <div class="text-md-center">
-                 Display Order
+                 Project Name
                </div>
             </th>
             <th>
                <div class="text-md-center">
-                 Created Date
+                 Start Date
                </div>
             </th>
+            <th>
+               <div class="text-md-center">
+                 Edit
+               </div>
+            </th>
+            <th></th>
          </tr>
             
     </thead>
@@ -66,6 +72,16 @@
                     <td with="25%">
                         <div class="text-md-center">
                           @obj.CreatedDate
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-md-center">
+                            <div class="w-75 btn-group" role="group">
+                               <a asp-controller="Category" asp-action="Edit" asp-route-ID="@obj.ID"
+                               class="btn btn-primary mx-2"><i class="bi bi-pencil-square"></i>Edit</a>
+                                <a asp-controller="Category" asp-action="Delete" asp-route-ID="@obj.ID"
+                               class="btn btn-warning mx-2"><i class="bi bi-trash3"></i>Delete</a>
+                            </div>
                         </div>
                     </td>
 
