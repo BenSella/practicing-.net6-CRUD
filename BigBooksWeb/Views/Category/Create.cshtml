@@ -5,22 +5,24 @@
             <h2 class="text-primary">Create Category</h2>
             <hr />
         </div>
-        <div class="mb-3">
+        @*<div class="mb-3">
             <label asp-for="ID"></label>
              <div class="font-monospace">
-               <input asp-for="ID" class="from-control" />
+              <input asp-for="ID" class="from-control" />
              </div>
-        </div>
+        </div>*@
         <div class="mb-3">
             <label asp-for="Name"></label>
             <div class="font-monospace">
             <input asp-for="Name" class="from-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
         <div class="mb-3">
             <label asp-for="DisplayOrder"></label>
             <div class="font-monospace">
                <input asp-for="DisplayOrder" class="from-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
         <div class="mb-3">
