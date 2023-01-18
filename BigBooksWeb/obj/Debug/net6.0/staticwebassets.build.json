@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m1JJAfGKywg/bJZ3N2LlIXHDdpAUid2DbCP7aap9x4Y=",
+  "Hash": "k9YHzOg1CugmnrH2WGakHv7QxGaNDdF/LSSnHJSeKCM=",
   "Source": "BigBooksWeb",
   "BasePath": "_content/BigBooksWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BigBooksWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "BigBooksWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\wwwroot\\",
+      "BasePath": "_content/BigBooksWeb",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\wwwroot\\css\\site.css",

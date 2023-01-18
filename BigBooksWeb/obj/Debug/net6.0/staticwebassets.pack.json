@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BigBooksWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
