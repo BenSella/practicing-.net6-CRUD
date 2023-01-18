@@ -16,5 +16,9 @@ namespace BigBooksWeb.Controllers
             IEnumerable<Category> objectCategoryList = this._db.Categories;    
             return View(objectCategoryList);
         }
+        public IActionResult Create()
+        {
+          return View();
+        }
     }
 }
