@@ -38,7 +38,7 @@ namespace BigBooksWeb.Controllers
             }
             return View(obj);
         }
-        //Get method
+        //Get method (Update)
         public IActionResult Edit(int? id)
         {
             if(id == null||id==0)
@@ -52,7 +52,7 @@ namespace BigBooksWeb.Controllers
             }
             return View(categoryFromDb);
         }
-        //Post method
+        //Post method (Update)
         [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Edit(Category obj)
         {
@@ -67,6 +67,33 @@ namespace BigBooksWeb.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
+        }
+        //Get method (Delete)
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var categoryFromDb = this._db.Categories.Find(id);
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
+        }
+        //Post method (Delete)
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int? id)
+        {
+            var obj = this._db.Categories.Find(id);
+            if(obj== null)
+            {
+               return NotFound();
+            }
+            this._db.Categories.Remove(obj);
+            this._db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 

@@ -1,32 +1,31 @@
 ﻿@model Category
-<form method="post">
+<form method="post" asp-action="DeletePost">
+    <input asp-for="ID" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Create Category</h2>
+            <h2 class="text-primary">Delete Category</h2>
             <hr />
         </div>
-        <div asp-validation-summary="All"></div>
         <div class="mb-3">
             <label asp-for="Name"></label>
             <div class="font-monospace">
-            <input asp-for="Name" class="from-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="Name" disabled class="from-control" />
             </div>
         </div>
         <div class="mb-3">
             <label asp-for="DisplayOrder"></label>
             <div class="font-monospace">
-               <input asp-for="DisplayOrder" class="from-control" />
-               <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+                <input asp-for="DisplayOrder" disabled class="from-control" />
             </div>
         </div>
         <div class="mb-3">
             <label asp-for="CreatedDate"></label>
             <div class="font-monospace">
-               <input asp-for="CreatedDate" class="from-control" />
+                <input asp-for="CreatedDate" disabled class="from-control" />
             </div>
         </div>
-        <button type ="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <button type="submit" class="btn btn-warning" style="width:150px">Delete</button>
+    
         <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">Back To List</a>
     </div>
 </form>
