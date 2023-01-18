@@ -23,10 +23,13 @@ namespace BigBooksWeb.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if (ModelState.)
-            this._db.Categories.Add(obj);
-            this._db.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                this._db.Categories.Add(obj);
+                this._db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
         }
     }
 }
