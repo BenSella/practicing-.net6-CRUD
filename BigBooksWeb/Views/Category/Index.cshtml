@@ -1,0 +1,76 @@
+﻿model IEnumerable<Category> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="constainer p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Category List</h2>
+        </div>
+        <div class="col-6 text-end">
+        <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> &nbsp Create new Category
+        </a>
+        </div>
+    </div>
+</div>
+<br /><br />
+
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+            
+        <tr>
+            <th>
+             <div class="text-md-center"> 
+               ID
+             </div>
+            </th>
+           <th>
+               <div class="text-md-center">
+                 Category Name
+                </div>
+           </th>
+            <th>
+               <div class="text-md-center">
+                 Display Order
+               </div>
+            </th>
+            <th>
+               <div class="text-md-center">
+                 Created Date
+               </div>
+            </th>
+         </tr>
+            
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+            {
+                <tr>
+
+                   <td with="25%">
+                        <div class="text-md-center">
+                          @obj.ID
+                       </div>
+                   </td>
+                    <td with="25%">
+                        <div class="text-md-center">
+                          @obj.Name
+                        </div>
+                    </td>
+                    <td with="25%">
+                        <div class="text-md-center">
+                          @obj.DisplayOrder
+                        </div>
+                    </td>
+                    <td with="25%">
+                        <div class="text-md-center">
+                          @obj.CreatedDate
+                        </div>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+</table>

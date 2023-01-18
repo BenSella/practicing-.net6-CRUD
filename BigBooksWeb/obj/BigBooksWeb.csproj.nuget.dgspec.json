@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\First_Try\\BigBooksWeb\\BigBooksWeb\\BigBooksWeb.csproj": {}
+    "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\BigBooksWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\First_Try\\BigBooksWeb\\BigBooksWeb\\BigBooksWeb.csproj": {
+    "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\BigBooksWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\First_Try\\BigBooksWeb\\BigBooksWeb\\BigBooksWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\BigBooksWeb.csproj",
         "projectName": "BigBooksWeb",
-        "projectPath": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\First_Try\\BigBooksWeb\\BigBooksWeb\\BigBooksWeb.csproj",
+        "projectPath": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\BigBooksWeb.csproj",
         "packagesPath": "C:\\Users\\Ben Sella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\First_Try\\BigBooksWeb\\BigBooksWeb\\obj\\",
+        "outputPath": "C:\\Users\\Ben Sella\\Desktop\\Wayo\\WebDev\\Second_Try\\DotNet6\\BigBooksWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,17 +46,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
             }
           },
           "imports": [
