@@ -38,5 +38,36 @@ namespace BigBooksWeb.Controllers
             }
             return View(obj);
         }
+        //Get method
+        public IActionResult Edit(int? id)
+        {
+            if(id == null||id==0)
+            {
+                return NotFound();
+            }
+            var categoryFromDb = this._db.Categories.Find(id);
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
+        }
+        //Post method
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Edit(Category obj)
+        {
+            if (obj.Name.Equals(obj.DisplayOrder))
+            {
+                ModelState.AddModelError("Name", "Name and Display Order cant be the same");
+            }
+            if (ModelState.IsValid)
+            {
+                this._db.Categories.Update(obj);
+                this._db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
     }
+
 }
